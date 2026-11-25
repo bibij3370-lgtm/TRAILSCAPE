@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Manrope", system-ui, -apple-system, sans-serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+
+  --color-forest: #304B37;
+  --color-deep: #243D2D;
+  --color-sage: #A6B79B;
+  --color-soft-sage: #DDE5D6;
+  --color-cream: #F4F3EC;
+  --color-warm-white: #FAFAF5;
+  --color-charcoal: #242923;
+  --color-muted: #858B80;
+
+  --color-easy: #77A77A;
+  --color-moderate: #D9A85D;
+  --color-hard: #C87568;
+
+  --radius-sm-app: 12px;
+  --radius-md-app: 18px;
+  --radius-lg-app: 24px;
+  --radius-xl-app: 30px;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #F4F3EC;
+    color: #242923;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

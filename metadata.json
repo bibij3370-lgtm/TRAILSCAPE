@@ -1,0 +1,6 @@
+{
+  "name": "TRAILSCAPE",
+  "description": "Discover scenic hiking trails, track alpine adventures live, and explore outdoors offline with TRAILSCAPE.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
